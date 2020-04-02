@@ -1,5 +1,5 @@
 //
-//  ButtonViewController.swift
+//  BeginMatchViewController.swift
 //  Roshambo
 //
 //  Created by Marky Jordan on 4/1/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: ButtonViewController: UIViewController
+// MARK: BeginMatchViewController: UIViewController
 
 class BeginMatchViewController: UIViewController {
 
