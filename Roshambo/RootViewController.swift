@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RootViewController.swift
 //  Roshambo
 //
 //  Created by Marky Jordan on 4/1/20.
@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: ViewController: UIViewController
 
-class ViewController: UIViewController {
+class RrotViewController: UIViewController {
 
     // MARK: Outlets/Properties
     
