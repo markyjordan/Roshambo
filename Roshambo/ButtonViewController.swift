@@ -17,7 +17,7 @@ class ButtonViewController: UIViewController {
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var scissorsButton: UIButton!
-    @IBOutlet weak var 
+    @IBOutlet weak var playLabel: UILabel!
     
     // MARK: Life Cycle
     
