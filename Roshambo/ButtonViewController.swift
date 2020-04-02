@@ -14,6 +14,11 @@ class ButtonViewController: UIViewController {
 
     // MARK: Outlets/Properties
     
+    @IBOutlet weak var rockButton: UIButton!
+    @IBOutlet weak var paperButton: UIButton!
+    @IBOutlet weak var scissorsButton: UIButton!
+    @IBOutlet weak var 
+    
     // MARK: Life Cycle
     
     override func viewDidLoad() {
