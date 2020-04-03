@@ -28,5 +28,25 @@ class BeginMatchViewController: UIViewController {
     
     // MARK: Actions
 
-
+    
+    
+    
+    
+    // Generate opponent's play
+    
+    enum PlayOptions: String {
+        case rock = "rock"
+        case paper = "paper"
+        case scissors = "scissors"
+        
+        func generateOpponentsPlay() {
+            
+        }
+    }
+    
+    func determineWinner() {
+        
+    }
+    
+    
 }
