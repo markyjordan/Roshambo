@@ -14,11 +14,6 @@ class BeginMatchViewController: UIViewController {
 
     // MARK: Outlets/Properties
     
-    @IBOutlet weak var rockButton: UIButton!
-    @IBOutlet weak var paperButton: UIButton!
-    @IBOutlet weak var scissorsButton: UIButton!
-    @IBOutlet weak var playLabel: UILabel!
-    
     // MARK: Life Cycle
     
     override func viewDidLoad() {
@@ -28,13 +23,19 @@ class BeginMatchViewController: UIViewController {
     
     // MARK: Actions
 
-    
-    
-    
+    @IBAction func playRock(_ sender: Any) {
+        
+    }
+    @IBAction func playPaper(_ sender: Any) {
+        
+    }
+    @IBAction func playScissors(_ sender: Any) {
+        
+    }
     
     // Generate opponent's play
     
-    enum PlayOptions: String {
+    enum HandShapes: String {
         case rock = "rock"
         case paper = "paper"
         case scissors = "scissors"

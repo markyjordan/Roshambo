@@ -25,6 +25,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMW-Gb-RpE">
                                                 <rect key="frame" x="0.0" y="6.6666666666666572" width="75" height="65"/>
                                                 <state key="normal" image="rock"/>
+                                                <connections>
+                                                    <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b7q-ug-Iff"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -34,10 +37,17 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9o-E5-TJl">
                                                 <rect key="frame" x="0.0" y="6.6666666666666856" width="75" height="65"/>
                                                 <state key="normal" image="paper"/>
+                                                <connections>
+                                                    <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLs-8a-2SJ"/>
+                                                    <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="voa-jG-gU5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFp-ls-vTc">
                                                 <rect key="frame" x="175" y="6.6666666666666856" width="75" height="65"/>
                                                 <state key="normal" image="scissors"/>
+                                                <connections>
+                                                    <action selector="playScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnv-Km-71K"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
