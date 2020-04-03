@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,44 +8,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Begin Match View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BeginMatchViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="u5L-c6-F7G">
-                                <rect key="frame" x="50" y="244" width="314" height="418"/>
+                                <rect key="frame" x="50" y="244" width="275" height="334"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IAE-5q-07i">
-                                        <rect key="frame" x="119.5" y="0.0" width="75" height="106"/>
+                                        <rect key="frame" x="100" y="0.0" width="75" height="78"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMW-Gb-RpE">
-                                                <rect key="frame" x="0.0" y="20.5" width="75" height="65"/>
+                                                <rect key="frame" x="0.0" y="6.6666666666666572" width="75" height="65"/>
                                                 <state key="normal" image="rock"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="7K1-gT-tnB">
-                                        <rect key="frame" x="32" y="156" width="250" height="106"/>
+                                        <rect key="frame" x="12.666666666666657" y="128" width="249.99999999999997" height="78"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9o-E5-TJl">
-                                                <rect key="frame" x="0.0" y="20.5" width="75" height="65"/>
+                                                <rect key="frame" x="0.0" y="6.6666666666666856" width="75" height="65"/>
                                                 <state key="normal" image="paper"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFp-ls-vTc">
-                                                <rect key="frame" x="175" y="20.5" width="75" height="65"/>
+                                                <rect key="frame" x="175" y="6.6666666666666856" width="75" height="65"/>
                                                 <state key="normal" image="scissors"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3rN-jS-C6l">
-                                        <rect key="frame" x="101.5" y="312" width="111" height="106"/>
+                                        <rect key="frame" x="82" y="256" width="111" height="78"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTb-gS-wEV">
-                                                <rect key="frame" x="0.0" y="39.5" width="111" height="27.5"/>
+                                                <rect key="frame" x="0.0" y="25.333333333333371" width="111" height="27.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -68,36 +68,43 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="d9z-Hi-gl8"/>
+                    <connections>
+                        <outlet property="paperButton" destination="p9o-E5-TJl" id="Qa5-g2-9x5"/>
+                        <outlet property="playLabel" destination="RTb-gS-wEV" id="eyO-9E-wLm"/>
+                        <outlet property="rockButton" destination="uMW-Gb-RpE" id="dqU-cg-0kU"/>
+                        <outlet property="scissorsButton" destination="fFp-ls-vTc" id="CVV-Rb-a7B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="EYz-Wa-XRk">
             <objects>
-                <viewController id="7iP-3f-mPj" sceneMemberID="viewController">
+                <viewController id="7iP-3f-mPj" customClass="ResultsViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ssL-lj-ZII">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="rtZ-nz-T3w">
-                                <rect key="frame" x="50" y="244" width="314" height="418"/>
+                                <rect key="frame" x="50" y="244" width="275" height="334"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9G-8J-6bj">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="106"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="78"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPH-94-Y8I">
-                                                <rect key="frame" x="0.0" y="0.0" width="314" height="106"/>
+                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="vPH-94-Y8I">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="78"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRV-vU-Rip">
-                                        <rect key="frame" x="0.0" y="156" width="314" height="106"/>
+                                        <rect key="frame" x="0.0" y="128" width="275" height="78"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hm-vi-O2L">
-                                                <rect key="frame" x="0.0" y="0.0" width="314" height="106"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="78"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -105,10 +112,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sY-Mv-lx7">
-                                        <rect key="frame" x="0.0" y="312" width="314" height="106"/>
+                                        <rect key="frame" x="0.0" y="256" width="275" height="78"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDV-vI-XVw">
-                                                <rect key="frame" x="0.0" y="0.0" width="314" height="106"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="78"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                                 <state key="normal" title="Play Again"/>
                                             </button>
@@ -126,10 +133,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OkH-cj-qVW"/>
                     </view>
+                    <connections>
+                        <outlet property="playAgain" destination="qDV-vI-XVw" id="edQ-bX-caY"/>
+                        <outlet property="resultImage" destination="vPH-94-Y8I" id="qfX-Rm-aEz"/>
+                        <outlet property="resultStatement" destination="8Hm-vi-O2L" id="f7Z-3j-1IF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vj-GH-PSK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="138"/>
+            <point key="canvasLocation" x="1836" y="138"/>
         </scene>
     </scenes>
     <resources>
