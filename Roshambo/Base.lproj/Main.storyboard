@@ -22,7 +22,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IAE-5q-07i">
                                         <rect key="frame" x="100" y="0.0" width="75" height="78"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMW-Gb-RpE">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMW-Gb-RpE" userLabel="Rock">
                                                 <rect key="frame" x="0.0" y="6.6666666666666572" width="75" height="65"/>
                                                 <state key="normal" image="rock"/>
                                                 <connections>
@@ -34,7 +34,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="7K1-gT-tnB">
                                         <rect key="frame" x="12.666666666666657" y="128" width="249.99999999999997" height="78"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9o-E5-TJl">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9o-E5-TJl" userLabel="Paper">
                                                 <rect key="frame" x="0.0" y="6.6666666666666856" width="75" height="65"/>
                                                 <state key="normal" image="paper"/>
                                                 <connections>
@@ -42,8 +42,9 @@
                                                     <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="voa-jG-gU5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFp-ls-vTc">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFp-ls-vTc" userLabel="Scissors">
                                                 <rect key="frame" x="175" y="6.6666666666666856" width="75" height="65"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                 <state key="normal" image="scissors"/>
                                                 <connections>
                                                     <action selector="playScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnv-Km-71K"/>

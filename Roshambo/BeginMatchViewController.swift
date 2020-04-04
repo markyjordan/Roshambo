@@ -14,6 +14,11 @@ class BeginMatchViewController: UIViewController {
 
     // MARK: Outlets/Properties
     
+    @IBOutlet weak var rockButton: UIButton!
+    @IBOutlet weak var paperButton: UIButton!
+    @IBOutlet weak var scissorsButton: UIButton!
+    @IBOutlet weak var playLabel: UILabel!
+    
     // MARK: Life Cycle
     
     override func viewDidLoad() {
@@ -23,31 +28,43 @@ class BeginMatchViewController: UIViewController {
     
     // MARK: Actions
 
+    // programmatic approach
     @IBAction func playRock(_ sender: Any) {
-        
+        var controller: ResultsViewController
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultsViewController") as! ResultsViewController
+        present(controller, animated: true, completion: nil)
     }
+    
+    // programmatic approach with segue
     @IBAction func playPaper(_ sender: Any) {
         
     }
+    
+    // segue only approach
     @IBAction func playScissors(_ sender: Any) {
         
     }
     
-    // Generate opponent's play
+    // get hand shape
+    func getHandShape() {
+        
+    }
+
+    // generate opponent's play
     
     enum HandShapes: String {
-        case rock = "rock"
-        case paper = "paper"
-        case scissors = "scissors"
+        case Rock = "Rock"
+        case Paper = "Paper"
+        case Scissors = "Scissors"
         
         func generateOpponentsPlay() {
-            
+            let shapes = ["Rock", "Paper", "Scissors"]
+            let randomChoice = Int(arc4random_uniform(3))
+            return Shape(rawValue: shapes[randomChoice])
         }
     }
     
     func determineWinner() {
         
     }
-    
-    
 }
