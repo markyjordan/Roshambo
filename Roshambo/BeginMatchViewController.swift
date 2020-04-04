@@ -41,8 +41,11 @@ class BeginMatchViewController: UIViewController {
     }
     
     // segue only approach
-    @IBAction func playScissors(_ sender: Any?) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "play" {
+            let controller = segue.destination as! ResultsViewController
+            controller.userChoice = getHandShape(sender as! UIButton)
+        }
     }
     
     // get hand shape of user selected button

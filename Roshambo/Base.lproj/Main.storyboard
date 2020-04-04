@@ -40,7 +40,7 @@
                                                 <connections>
                                                     <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLs-8a-2SJ"/>
                                                     <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="voa-jG-gU5"/>
-                                                    <segue destination="7iP-3f-mPj" kind="modal" identifier="Play" id="kPy-7V-dUZ"/>
+                                                    <segue destination="7iP-3f-mPj" kind="modal" identifier="play" id="kPy-7V-dUZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFp-ls-vTc" userLabel="Scissors">
