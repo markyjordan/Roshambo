@@ -29,19 +29,19 @@ class BeginMatchViewController: UIViewController {
     // MARK: Actions
 
     // programmatic approach
-    @IBAction func playRock(_ sender: Any) {
+    @IBAction func playRock(_ sender: UIButton) {
         var controller: ResultsViewController
         controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultsViewController") as! ResultsViewController
         present(controller, animated: true, completion: nil)
     }
     
     // programmatic approach with segue
-    @IBAction func playPaper(_ sender: Any) {
-        
+    @IBAction func playPaper(_ sender: UIButton) {
+        performSegue(withIdentifier: "play", sender: sender)
     }
     
     // segue only approach
-    @IBAction func playScissors(_ sender: Any) {
+    @IBAction func playScissors(_ sender: Any?) {
         
     }
     

@@ -40,6 +40,7 @@
                                                 <connections>
                                                     <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLs-8a-2SJ"/>
                                                     <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="voa-jG-gU5"/>
+                                                    <segue destination="7iP-3f-mPj" kind="modal" identifier="Play" id="kPy-7V-dUZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFp-ls-vTc" userLabel="Scissors">
@@ -96,26 +97,26 @@
             <objects>
                 <viewController id="7iP-3f-mPj" customClass="ResultsViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ssL-lj-ZII">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="rtZ-nz-T3w">
-                                <rect key="frame" x="50" y="244" width="275" height="334"/>
+                                <rect key="frame" x="50" y="200" width="275" height="324"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9G-8J-6bj">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="78"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="74.666666666666671"/>
                                         <subviews>
                                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="vPH-94-Y8I">
-                                                <rect key="frame" x="0.0" y="0.0" width="275" height="78"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="74.666666666666671"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRV-vU-Rip">
-                                        <rect key="frame" x="0.0" y="128" width="275" height="78"/>
+                                        <rect key="frame" x="0.0" y="124.66666666666669" width="275" height="74.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hm-vi-O2L">
-                                                <rect key="frame" x="0.0" y="0.0" width="275" height="78"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="74.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -123,10 +124,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sY-Mv-lx7">
-                                        <rect key="frame" x="0.0" y="256" width="275" height="78"/>
+                                        <rect key="frame" x="0.0" y="249.33333333333329" width="275" height="74.666666666666657"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDV-vI-XVw">
-                                                <rect key="frame" x="0.0" y="0.0" width="275" height="78"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="74.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                                 <state key="normal" title="Play Again"/>
                                             </button>
