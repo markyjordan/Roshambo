@@ -50,19 +50,7 @@ class BeginMatchViewController: UIViewController {
         
     }
 
-    // generate opponent's play
     
-    enum HandShapes: String {
-        case Rock = "Rock"
-        case Paper = "Paper"
-        case Scissors = "Scissors"
-        
-        func generateOpponentsPlay() {
-            let shapes = ["Rock", "Paper", "Scissors"]
-            let randomChoice = Int(arc4random_uniform(3))
-            return Shape(rawValue: shapes[randomChoice])
-        }
-    }
     
     func determineWinner() {
         
