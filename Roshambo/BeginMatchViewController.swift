@@ -45,13 +45,12 @@ class BeginMatchViewController: UIViewController {
         
     }
     
-    // get hand shape
-    func getHandShape() {
-        
+    // get hand shape of user selected button
+    func getHandShape(_ sender: UIButton) -> HandShape {
+        let shape = sender.title(for: UIControl.State())!
+        return HandShape(rawValue: shape)!
     }
 
-    
-    
     func determineWinner() {
         
     }

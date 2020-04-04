@@ -37,8 +37,6 @@ class ResultsViewController: UIViewController {
     var userChoice: HandShape!
     var opponentChoice: HandShape = HandShape.generatePlay()
     
-    
-    
     // MARK: Life Cycle
     
     override func viewDidLoad() {
