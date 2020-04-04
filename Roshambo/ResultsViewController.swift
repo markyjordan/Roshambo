@@ -68,4 +68,7 @@ class ResultsViewController: UIViewController {
     
     // MARK: Actions
     
+    @IBAction func playAgain(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

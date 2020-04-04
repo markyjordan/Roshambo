@@ -53,8 +53,4 @@ class BeginMatchViewController: UIViewController {
         let shape = sender.title(for: UIControl.State())!
         return HandShape(rawValue: shape)!
     }
-
-    func determineWinner() {
-        
-    }
 }
