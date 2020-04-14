@@ -17,7 +17,7 @@ enum HandShape: String {
     // generate opponent's play
     static func generatePlay() -> HandShape {
         let shapes = ["Rock", "Paper", "Scissors"]
-        let randomChoice = Int.random(in: 0...3)
+        let randomChoice = Int.random(in: 0...2)
         return HandShape(rawValue: shapes[randomChoice])!
     }
 }

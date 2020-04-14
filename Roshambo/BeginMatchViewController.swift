@@ -32,6 +32,7 @@ class BeginMatchViewController: UIViewController {
     @IBAction func playRock(_ sender: UIButton) {
         var controller: ResultsViewController
         controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultsViewController") as! ResultsViewController
+        controller.userChoice = getHandShape(sender)
         present(controller, animated: true, completion: nil)
     }
     
